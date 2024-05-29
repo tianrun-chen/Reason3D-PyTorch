@@ -45,23 +45,40 @@ For FAUST dataset we use as the benchmark (for open-vocabulary segmentation), cl
 (Explict Prompting)
 
 For one FAUST data on the coarse segmentation:(tr_scan_000 example):
+
     1. mesh render image
-    bash FAUST/gen_rander_img.sh
+    
+   ```bash FAUST/gen_rander_img.sh
+```
     Note: You can change pose.txt to what you want or change -frontview_center
+    
     2. image get mask
-    bash FAUST/gen_mask.sh
+    
+    ```bash FAUST/gen_mask.sh
+    ```
+    
     3. image and mask gen seg mesh
-    bash FAUST/gen_Seg_mesh.sh
+    
+    ```bash FAUST/gen_Seg_mesh.sh
+    ```
     
 **Note: You need to change the category information in the .sh file manually**
 
 For other data segmentation:
+
     1. mesh render image
-    bash scripts/gen_rander_img.sh
+    
+    ```bash scripts/gen_rander_img.sh
+   ```
     2. image get mask
-    bash scripts/gen_mask.sh
+
+    ```bash scripts/gen_mask.sh
+```
+
     3. image and mask gen seg mesh
-    bash scripts/gen_Seg_mesh.sh
+
+    ```bash scripts/gen_Seg_mesh.sh
+    ```
 
 ## Qualitative Evaluation
 Given an output dir containing the coarse predictions for the len(mesh_name.txt) scans.
