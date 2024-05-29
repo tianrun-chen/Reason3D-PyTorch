@@ -6,6 +6,8 @@
 
 <img src='https://tianrun-chen.github.io/Reason3D/static/images/Fig1.jpg'>
 
+<img src='https://tianrun-chen.github.io/Reason3D/static/images/Fig3.jpg'>
+   
 ## Installation
 0. git clone this repository :D
    
