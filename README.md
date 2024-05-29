@@ -49,7 +49,7 @@ For one FAUST data on the coarse segmentation:(tr_scan_000 example):
     1. mesh render image
     
    ```bash FAUST/gen_rander_img.sh
-```
+   ```
     Note: You can change pose.txt to what you want or change -frontview_center
     
     2. image get mask
