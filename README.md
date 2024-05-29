@@ -17,21 +17,21 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-##Datasets
+## Datasets
 
 For FAUST, click this line to download the FAUST dataset, and put it in input/
     https://drive.google.com/drive/folders/1T5reNd6GqRfQRyhw8lmhQwCVWLcCOZVN
 For our reasoning 3D segmentation data, you can play with your own interested models. We collect models from Sketchfab. 
 
 
-##Pre-trained weights
+## Pre-trained weights
 
 Download thie weights in pre_model/
 
 https://huggingface.co/xinlai/LISA-13B-llama2-v0-explanatory
 
 
-##Running
+## Running
 
 For one FAUST data on the coarse segmentation:(tr_scan_000 example):
     1. mesh render image
@@ -50,7 +50,7 @@ For other data segmentation:
     3. image and mask gen seg mesh
     bash scripts/gen_Seg_mesh.sh
 
-##Evaluation
+## Evaluation
 
 Given an output dir containing the coarse predictions for the len(mesh_name.txt) scans.
 run coarse as following:
@@ -60,5 +60,10 @@ run coarse as following:
 run fine_grained as following:
 ```python evaluate.py -fine_grained -output_dir outputs/ -mesh_name input/FAUST/mesh_name.txt
 ```
+
+
+## Acknowledgements
+The part of the code is derived from SATR: Zero-Shot Semantic Segmentation of 3D Shapes <a href='https://github.com/Samir55/SATR'><img src='https://img.shields.io/badge/Project-Page-Green'></a> by Ahmed Abdelreheem, Ivan Skorokhodov, Maks Ovsjanikov, and Peter Wonka
+from KAUST and LIX, Ecole Polytechnique. Thanks to the authors for their awesome work!
 
 
