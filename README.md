@@ -85,7 +85,7 @@ Please cite this work if you find it inspiring or helpful!
   year={2024}
 }
 ```
-You are also welcomed to check our CVPR2024 paper using LLM to perform 2D few-shot image segmentation.
+You are also welcomed to check our CVPR2024 paper using LLM to perform 2D few-shot image segmentation. <a href='https://github.com/lanyunzhu99/llafs/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
 ```
 @article{zhu2023llafs,
   title={Llafs: When large-language models meet few-shot segmentation},
@@ -94,7 +94,7 @@ You are also welcomed to check our CVPR2024 paper using LLM to perform 2D few-sh
   year={2023}
 }
 ```
-and our Segment Anything Adapter
+and our Segment Anything Adapter (SAM-Adapter) <a href='https://github.com/tianru-chen/SAM-Adaptor-Pytorch/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
 ```
 @misc{chen2023sam,
       title={SAM Fails to Segment Anything? -- SAM-Adapter: Adapting SAM in Underperformed Scenes: Camouflage, Shadow, and More}, 
