@@ -1,9 +1,12 @@
 ## Reasoning3D - Grounding and Reasoning in 3D: Fine-Grained Zero-Shot Open-Vocabulary 3D Reasoning Part Segmentation via Large Vision-Language Models 
+<a href="http://tianrun-chen.github.io/" target="_blank">Tianrun Chen</a>, Chun'an Yu, Jing Li, Lanyun Zhu, Deyi Ji, Yong Zhang, Ying Zang, Zejian Li, Lingyun Sun
+<a href='https://www.kokoni3d.com/'> KOKONI, Moxin Technology (Huzhou) Co., LTD </a>, Zhejiang University, Singapore University of Technology and Design, Huzhou University, University of Science and Technology of China.
 
-
+<img src='https://tianrun-chen.github.io/Reason3D/static/images/Fig1.jpg'>
 
 ## Installation
-
+0. git clone this repository :D
+   
 1. Create Environment
 ```conda create -n 3Dreason python=3.8
 conda activate 3Dreaso
@@ -16,19 +19,21 @@ pip install flash-attn --no-build-isolation
 pip install -r requirements.txt
 pip install -e .
 ```
+3. Add your customized data in input/ folder
+   
+4. Download thie weights in pre_model/
+https://huggingface.co/xinlai/LISA-13B-llama2-v0-explanatory
+
+5. run main.py. You will see a user interface like this:
+<img src='https://tianrun-chen.github.io/Reason3D/static/images/ui.jpg'>
 
 ## Datasets
+For our reasoning 3D segmentation data, you can play with your own interested models. We collect models from Sketchfab. https://sketchfab.com/ 
 
-For FAUST, click this line to download the FAUST dataset, and put it in input/
-    https://drive.google.com/drive/folders/1T5reNd6GqRfQRyhw8lmhQwCVWLcCOZVN
-For our reasoning 3D segmentation data, you can play with your own interested models. We collect models from Sketchfab. 
+For FAUST dataset we use as the benchmark (for open-vocabulary segmentation), click this line to download the FAUST dataset, and put it in input/
+    https://drive.google.com/drive/folders/1T5reNd6GqRfQRyhw8lmhQwCVWLcCOZVN/
 
 
-## Pre-trained weights
-
-Download thie weights in pre_model/
-
-https://huggingface.co/xinlai/LISA-13B-llama2-v0-explanatory
 
 
 ## Running
@@ -50,14 +55,16 @@ For other data segmentation:
     3. image and mask gen seg mesh
     bash scripts/gen_Seg_mesh.sh
 
-## Evaluation
+## Qualitative Evaluation
 Given an output dir containing the coarse predictions for the len(mesh_name.txt) scans.
 run coarse as following:
-```python evaluate.py -output_dir outputs/ -mesh_name input/FAUST/mesh_name.txt
+```shell
+python scripts/evaluate_faust.py -output_dir outputs/coarse_output_dir
 ```
+or for the fine_grained:
 
-run fine_grained as following:
-```python evaluate.py -fine_grained -output_dir outputs/ -mesh_name input/FAUST/mesh_name.txt
+```shell
+python scripts/evaluate_faust.py --fine_grained -output_dir outputs/fine_grained_output_dir
 ```
 
 ## Acknowledgements
