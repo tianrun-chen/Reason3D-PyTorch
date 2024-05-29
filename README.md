@@ -7,7 +7,7 @@
 <img src='https://tianrun-chen.github.io/Reason3D/static/images/Fig1.jpg'>
 
    
-## Installation
+## Quick Start / Installation
 0. git clone this repository :D
    
 1. Create Environment
