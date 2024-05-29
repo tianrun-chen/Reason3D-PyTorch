@@ -13,13 +13,8 @@ conda activate 3Dreaso
 ```pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
 pip install kaolin==0.15.0 -f https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-1.13.1_cu117.html
 pip install flash-attn --no-build-isolation
-```
-
-```pip install -r requirements.txt
-```
-
-3. Install rely package
-```pip install -e .
+pip install -r requirements.txt
+pip install -e .
 ```
 
 ##Datasets
