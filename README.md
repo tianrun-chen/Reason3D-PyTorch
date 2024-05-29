@@ -38,10 +38,8 @@ For our reasoning 3D segmentation data, you can play with your own interested mo
 For FAUST dataset we use as the benchmark (for open-vocabulary segmentation), click this line to download the FAUST dataset, and put it in input/
     https://drive.google.com/drive/folders/1T5reNd6GqRfQRyhw8lmhQwCVWLcCOZVN/
 
-
-
-
-## Running
+## Running the Open-Vocabulary Segmentation
+(Explict Prompting)
 
 For one FAUST data on the coarse segmentation:(tr_scan_000 example):
     1. mesh render image
@@ -51,6 +49,8 @@ For one FAUST data on the coarse segmentation:(tr_scan_000 example):
     bash FAUST/gen_mask.sh
     3. image and mask gen seg mesh
     bash FAUST/gen_Seg_mesh.sh
+    
+**Note: You need to change the category information in the .sh file manually**
 
 For other data segmentation:
     1. mesh render image
