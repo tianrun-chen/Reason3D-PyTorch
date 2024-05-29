@@ -6,17 +6,21 @@
 
 1. Create Environment
 ```conda create -n 3Dreason python=3.8
-conda activate 3Dreaso```
+conda activate 3Dreaso
+```
 
 2. Install necessary packages
 ```pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
 pip install kaolin==0.15.0 -f https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-1.13.1_cu117.html
-pip install flash-attn --no-build-isolation```
+pip install flash-attn --no-build-isolation
+```
 
-```pip install -r requirements.txt```
+```pip install -r requirements.txt
+```
 
 3. Install rely package
-```pip install -e .```
+```pip install -e .
+```
 
 ##Datasets
 
@@ -55,9 +59,11 @@ For other data segmentation:
 
 Given an output dir containing the coarse predictions for the len(mesh_name.txt) scans.
 run coarse as following:
-```python evaluate.py -output_dir outputs/ -mesh_name input/FAUST/mesh_name.txt```
+```python evaluate.py -output_dir outputs/ -mesh_name input/FAUST/mesh_name.txt
+```
 
 run fine_grained as following:
-```python evaluate.py -fine_grained -output_dir outputs/ -mesh_name input/FAUST/mesh_name.txt```
+```python evaluate.py -fine_grained -output_dir outputs/ -mesh_name input/FAUST/mesh_name.txt
+```
 
 
