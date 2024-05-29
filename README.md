@@ -6,7 +6,6 @@
 
 <img src='https://tianrun-chen.github.io/Reason3D/static/images/Fig1.jpg'>
 
-<img src='https://tianrun-chen.github.io/Reason3D/static/images/Fig3.jpg'>
    
 ## Installation
 0. git clone this repository :D
@@ -33,6 +32,8 @@ https://huggingface.co/xinlai/LISA-13B-llama2-v0-explanatory
 <img src='https://tianrun-chen.github.io/Reason3D/static/images/ui.png'>
 
  **Note**: The model use LISA: Reasoning Segmentation via Large Language Model as the backbone model. **The model performance is heavily affected by the prompt choice**. Refer to the LISA <a href='https://github.com/dvlab-research/LISA'><img src='https://img.shields.io/badge/Project-Page-Green'></a> for more details about choosing the proper prompt. You can also use other base models for better performance.
+
+<img src='https://tianrun-chen.github.io/Reason3D/static/images/Fig3.jpg'>
 
 ## Datasets
 For our reasoning 3D segmentation data, you can play with your own interested models. We collect models from Sketchfab. https://sketchfab.com/ 
