@@ -51,7 +51,6 @@ For other data segmentation:
     bash scripts/gen_Seg_mesh.sh
 
 ## Evaluation
-
 Given an output dir containing the coarse predictions for the len(mesh_name.txt) scans.
 run coarse as following:
 ```python evaluate.py -output_dir outputs/ -mesh_name input/FAUST/mesh_name.txt
@@ -60,7 +59,6 @@ run coarse as following:
 run fine_grained as following:
 ```python evaluate.py -fine_grained -output_dir outputs/ -mesh_name input/FAUST/mesh_name.txt
 ```
-
 
 ## Acknowledgements
 The part of the code is derived from SATR: Zero-Shot Semantic Segmentation of 3D Shapes <a href='https://github.com/Samir55/SATR'><img src='https://img.shields.io/badge/Project-Page-Green'></a> by Ahmed Abdelreheem, Ivan Skorokhodov, Maks Ovsjanikov, and Peter Wonka
