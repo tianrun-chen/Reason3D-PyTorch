@@ -1,5 +1,7 @@
 ## Reasoning3D - Grounding and Reasoning in 3D: Fine-Grained Zero-Shot Open-Vocabulary 3D Reasoning Part Segmentation via Large Vision-Language Models 
+
 <a href="http://tianrun-chen.github.io/" target="_blank">Tianrun Chen</a>, Chun'an Yu, Jing Li, Lanyun Zhu, Deyi Ji, Yong Zhang, Ying Zang, Zejian Li, Lingyun Sun
+
 <a href='https://www.kokoni3d.com/'> KOKONI, Moxin Technology (Huzhou) Co., LTD </a>, Zhejiang University, Singapore University of Technology and Design, Huzhou University, University of Science and Technology of China.
 
 <img src='https://tianrun-chen.github.io/Reason3D/static/images/Fig1.jpg'>
