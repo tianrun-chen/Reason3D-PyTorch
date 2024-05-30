@@ -98,7 +98,7 @@ Please cite this work if you find it inspiring or helpful!
 @article{chen2024reason3D,
   title={Reasoning3D - Grounding and Reasoning in 3D: Fine-Grained Zero-Shot Open-Vocabulary 3D Reasoning Part Segmentation via Large Vision-Language Models },
   author={Chen, Tianrun and Yu, Chuan and Li, Jing and Jianqi, Zhang and Ji, Deyi and Ye, Jieping and Liu, Jun},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2405.19326},
   year={2024}
 }
 ```
@@ -106,7 +106,7 @@ You are also welcomed to check our CVPR2024 paper using LLM to perform 2D few-sh
 ```
 @article{zhu2023llafs,
   title={Llafs: When large-language models meet few-shot segmentation},
-  author={Zhu, Lanyun and Chen, Tianrun and Zhu, Lanyun and Ji, Deyi and Zhang, Yong and Zang, Ying and Li, Zejian and Sun, Lingyun},
+  author={Zhu, Lanyun and Chen, Tianrun and Ji, Deyi and Ye, Jieping and Liu, Jun},
   journal={arXiv preprint arXiv:2311.16926},
   year={2023}
 }
